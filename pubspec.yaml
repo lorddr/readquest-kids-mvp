@@ -35,6 +35,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/illustrations/
+    - assets/illustrations/small/
+    - assets/illustrations/large/
     - assets/lottie/
     - assets/data/stories.json

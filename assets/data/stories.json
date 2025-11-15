@@ -19,7 +19,8 @@
     "emoji": "📕",
     "text_display": "Bubo merge prin pădure. El găsește o carte mare. Cartea este roșie și grea. Bubo este foarte curios. El deschide cartea atent.",
     "text_asr": "bubo merge prin padure el gaseste o carte mare cartea este rosie si grea bubo este foarte curios el deschide cartea atent",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Carte",
+    "illustration_small": "assets/illustrations/small/story_02_small.png",
+    "illustration_large": "assets/illustrations/large/story_02_large.png",
     "words": 29
   },
   {
@@ -30,7 +31,8 @@
     "emoji": "🥕",
     "text_display": "Bubo vede un iepure mic. Iepurele este trist. El a pierdut morcovul. Bubo caută atent prin iarbă. Bubo găsește morcovul și este mândru.",
     "text_asr": "bubo vede un iepure mic iepurele este trist el a pierdut morcovul bubo cauta atent prin iarba bubo gaseste morcovul si este mandru",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Iepure",
+    "illustration_small": "assets/illustrations/small/story_03_small.png",
+    "illustration_large": "assets/illustrations/large/story_03_large.png",
     "words": 30
   },
   {
@@ -41,7 +43,8 @@
     "emoji": "🌠",
     "text_display": "Este noapte și Bubo privește cerul. El vede o stea căzătoare. Steaua strălucește tare. Bubo își pune repede o dorință. El este foarte încântat.",
     "text_asr": "este noapte si bubo priveste cerul el vede o stea cazatoare steaua straluceste tare bubo isi pune repede o dorinta el este foarte incantat",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Stea",
+    "illustration_small": "assets/illustrations/small/story_04_small.png",
+    "illustration_large": "assets/illustrations/large/story_04_large.png",
     "words": 30
   },
   {
@@ -52,7 +55,8 @@
     "emoji": "🍏",
     "text_display": "Lui Bubo îi este foame. El caută ceva de mâncare. Bubo găsește un măr mare. El mușcă din mărul dulce. Bubo este mulțumit.",
     "text_asr": "lui bubo ii este foame el cauta ceva de mancare bubo gaseste un mar mare el musca din marul dulce bubo este multumit",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Mar",
+    "illustration_small": "assets/illustrations/small/story_05_small.png",
+    "illustration_large": "assets/illustrations/large/story_05_large.png",
     "words": 27
   },
   {
@@ -63,7 +67,8 @@
     "emoji": "🌈",
     "text_display": "Începe să plouă. Bubo se ascunde sub o frunză mare. Lui Bubo îi place sunetul ploii. Ploaia se oprește și iese soarele. Bubo zboară vesel spre curcubeu.",
     "text_asr": "incepe sa ploua bubo se ascunde sub o frunza mare lui bubo ii place sunetul ploii ploaia se opreste si iese soarele bubo zboara vesel spre curcubeu",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Ploaie",
+    "illustration_small": "assets/illustrations/small/story_06_small.png",
+    "illustration_large": "assets/illustrations/large/story_06_large.png",
     "words": 34
   },
   {
@@ -74,7 +79,8 @@
     "emoji": "🪺",
     "text_display": "Bubo vrea un cuib nou. El cară bețe mici și frunze moi. El lucrează toată ziua. Noul cuib este moale și călduros. Bubo este obosit dar foarte mândru.",
     "text_asr": "bubo vrea un cuib nou el cara bete mici si frunze moi el lucreaza toata ziua noul cuib este moale si calduros bubo este obosit dar foarte mandru",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Cuib",
+    "illustration_small": "assets/illustrations/small/story_07_small.png",
+    "illustration_large": "assets/illustrations/large/story_07_large.png",
     "words": 35
   },
   {
@@ -85,7 +91,8 @@
     "emoji": "😴",
     "text_display": "Este întuneric afară. Bubo este în cuibul lui pufos. El se uită la luna mare. Totul este liniștit în pădure. Bubo se simte în siguranță și adoarme.",
     "text_asr": "este intuneric afara bubo este in cuibul lui pufos el se uita la luna mare totul este linistit in padure bubo se simte in siguranta si adoarme",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Noapte",
+    "illustration_small": "assets/illustrations/small/story_08_small.png",
+    "illustration_large": "assets/illustrations/large/story_08_large.png",
     "words": 33
   },
   {
@@ -96,7 +103,8 @@
     "emoji": "🎾",
     "text_display": "Bubo găsește o minge albastră. El lovește mingea cu aripa. Mingea sare sus de tot. Bubo aleargă și prinde mingea. El se joacă și este foarte amuzat.",
     "text_asr": "bubo gaseste o minge albastra el loveste mingea cu aripa mingea sare sus de tot bubo alearga si prinde mingea el se joaca si este foarte amuzat",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Minge",
+    "illustration_small": "assets/illustrations/small/story_09_small.png",
+    "illustration_large": "assets/illustrations/large/story_09_large.png",
     "words": 32
   },
   {
@@ -107,7 +115,8 @@
     "emoji": "🐉",
     "text_display": "Bubo ia cartea lui preferată. El se așază comod în cuib. Bubo citește despre un dragon curajos. Povestea este plină de aventuri. Bubo este fascinat și zâmbește.",
     "text_asr": "bubo ia cartea lui preferata el se asaza comod in cuib bubo citeste despre un dragon curajos povestea este plina de aventuri bubo este fascinat si zambeste",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Cititor",
+    "illustration_small": "assets/illustrations/small/story_10_small.png",
+    "illustration_large": "assets/illustrations/large/story_10_large.png",
     "words": 34
   }
 ]
