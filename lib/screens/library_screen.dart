@@ -17,12 +17,16 @@ class _LibraryScreenState extends State<LibraryScreen> {
   @override
   void initState() {
     super.initState();
-      Future<void> loadStories() async {
-    final String jsonString = await rootBundle.loadString('assets/data/stories.json');
-    final List<dynamic> jsonList = json.decode(jsonString);
-    setState(() {
-      stories = jsonList.map((json) => Story.fromJson(json)).toList();
-    });
+   Future<void> loadStories() async {
+    try {
+      final String jsonString = await rootBundle.loadString('assets/data/stories.json');
+      final List<dynamic> jsonList = json.decode(jsonString);
+      setState(() {
+        stories = jsonList.map((json) => Story.fromJson(json)).toList();
+      });
+    } catch (e) {
+      print('Eroare încărcare JSON: $e');
+    }
   }
   }
 
