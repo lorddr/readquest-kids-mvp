@@ -3,6 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import '../models/story.dart';
+import 'reading_screen.dart';
 
 class LibraryScreen extends StatefulWidget {
   const LibraryScreen({super.key});
@@ -57,8 +58,11 @@ class _LibraryScreenState extends State<LibraryScreen> {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                   child: InkWell(
                     onTap: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text('Deschide: ${story.title}')),
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ReadingScreen(story: story),
+                        ),
                       );
                     },
                     child: Column(
@@ -74,10 +78,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                             errorWidget: (context, url, error) => Container(
                                  color: Colors.grey[300],
                                  child: const Center(
-                                   child: Text(
-                                     '🖼️',
-                                     style: TextStyle(fontSize: 40),
-                                    ),
+                                   child: Text('🖼️', style: TextStyle(fontSize: 40)),
                                  ),
                             ),
                           ),
