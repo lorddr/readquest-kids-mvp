@@ -67,7 +67,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
             // Ilustrație
             ClipRRect(
               borderRadius: BorderRadius.circular(16),
-              child: IImage.asset(
+              child: Image.asset(
                        widget.story.illustrationLarge,
                        height: 250,
                        width: double.infinity,
