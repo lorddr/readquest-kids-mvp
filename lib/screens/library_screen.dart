@@ -71,7 +71,15 @@ class _LibraryScreenState extends State<LibraryScreen> {
                             width: double.infinity,
                             fit: BoxFit.cover,
                             placeholder: (context, url) => const CircularProgressIndicator(),
-                            errorWidget: (context, url, error) => const Icon(Icons.image, size: 50),
+                            errorWidget: (context, url, error) => Container(
+                                 color: Colors.grey[300],
+                                 child: const Center(
+                                   child: Text(
+                                     '🖼️',
+                                     style: TextStyle(fontSize: 40),
+                                    ),
+                                 ),
+                            ),
                           ),
                         ),
                         Padding(
