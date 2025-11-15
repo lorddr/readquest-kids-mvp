@@ -17,7 +17,10 @@ class _LibraryScreenState extends State<LibraryScreen> {
   @override
   void initState() {
     super.initState();
-   Future<void> loadStories() async {
+    loadStories(); // ← APEL AICI
+  }
+
+  Future<void> loadStories() async {
     try {
       final String jsonString = await rootBundle.loadString('assets/data/stories.json');
       final List<dynamic> jsonList = json.decode(jsonString);
@@ -27,15 +30,6 @@ class _LibraryScreenState extends State<LibraryScreen> {
     } catch (e) {
       print('Eroare încărcare JSON: $e');
     }
-  }
-  }
-
-  Future<void> loadStories() async {
-    final String jsonString = await rootBundle.loadString('lib/data/stories.json');
-    final List<dynamic> jsonList = json.decode(jsonString);
-    setState(() {
-      stories = jsonList.map((json) => Story.fromJson(json)).toList();
-    });
   }
 
   @override
@@ -63,7 +57,6 @@ class _LibraryScreenState extends State<LibraryScreen> {
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                   child: InkWell(
                     onTap: () {
-                      // TODO: Navighează la ecranul de citire
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(content: Text('Deschide: ${story.title}')),
                       );
@@ -85,10 +78,7 @@ class _LibraryScreenState extends State<LibraryScreen> {
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
                             children: [
-                              Text(
-                                story.emoji,
-                                style: const TextStyle(fontSize: 32),
-                              ),
+                              Text(story.emoji, style: const TextStyle(fontSize: 32)),
                               const SizedBox(height: 4),
                               Text(
                                 story.title,
