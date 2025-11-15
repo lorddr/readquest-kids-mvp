@@ -1,16 +1,19 @@
-# readquest_kids_mvp
+# ReadQuest Kids MVP
 
-A new Flutter project.
+App gamificată pentru citit fluent cu Bubo 🦉
 
-## Getting Started
+## Descriere
+Aplicație mobilă pentru copii 6–12 ani care învață să citească fluent prin povești scurte, ilustrații 3D și gamificare (badges, WPM, ASR).
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter
+- Firebase (Auth, Firestore, Storage)
+- Speech-to-Text
+- Lottie animations
 
-A few resources to get you started if this is your first Flutter project:
+## Status
+- Povești A1/A2 finalizate
+- Ilustrații 3D cute cu Bubo
+- JSON + emoji ready
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**@Lord_DR_ = MVP în 8 săptămâni**
