@@ -7,7 +7,8 @@
     "emoji": "🪹",
     "text_display": "Bubo stă pe o creangă. Îi este puțin frică. El sare și dă din aripi. Acum Bubo zboară sus. Bubo este foarte fericit.",
     "text_asr": "bubo sta pe o creanga ii este putin frica el sare si da din aripi acum bubo zboara sus bubo este foarte fericit",
-    "illustration_url": "https://via.placeholder.com/512?text=Bubo+Zbor",
+    "illustration_small": "assets/illustrations/small/story_01_small.png",
+    "illustration_large": "assets/illustrations/large/story_01_large.png",
     "words": 28
   },
   {

@@ -6,7 +6,8 @@ class Story {
   final String emoji;
   final String textDisplay;
   final String textAsr;
-  final String illustrationUrl;
+  final String illustrationSmall;
+  final String illustrationLarge;
   final int words;
 
   Story({
@@ -17,21 +18,23 @@ class Story {
     required this.emoji,
     required this.textDisplay,
     required this.textAsr,
-    required this.illustrationUrl,
+    required this.illustrationSmall,
+    required this.illustrationLarge,
     required this.words,
   });
 
   factory Story.fromJson(Map<String, dynamic> json) {
     return Story(
-      id: json['id'] as String,
-      level: json['level'] as String,
-      title: json['title'] as String,
-      badge: json['badge'] as String,
-      emoji: json['emoji'] as String,
-      textDisplay: json['text_display'] as String,
-      textAsr: json['text_asr'] as String,
-      illustrationUrl: json['illustration_url'] as String,
-      words: json['words'] as int,
+      id: json['id'],
+      level: json['level'],
+      title: json['title'],
+      badge: json['badge'],
+      emoji: json['emoji'],
+      textDisplay: json['text_display'],
+      textAsr: json['text_asr'],
+      illustrationSmall: json['illustration_small'],
+      illustrationLarge: json['illustration_large'],
+      words: json['words'],
     );
   }
 }

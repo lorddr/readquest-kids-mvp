@@ -53,7 +53,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
   Widget build(BuildContext context) {
     final correctText = widget.story.textAsr.toLowerCase().replaceAll('.', '').replaceAll(',', '');
     final spokenText = _wordsSpoken.toLowerCase().replaceAll('.', '').replaceAll(',', '');
-    final accuracy = correctText.isEmpty ? 0 : (spokenText.split(' ').where((w) => correctText.contains(w)).length / correctText.split(' ').length * 100).toInt();
+    final accuracy = correctText.isEmpty ? 0 : (spokenText.split(' ').where((w) => correctText.contains(w)).length / correctText.split(' ').length * 100);
 
     return Scaffold(
       appBar: AppBar(
@@ -64,21 +64,15 @@ class _ReadingScreenState extends State<ReadingScreen> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            // Ilustrație cu placeholder gri
+            // Ilustrație
             ClipRRect(
               borderRadius: BorderRadius.circular(16),
-              child: Image.network(
-                widget.story.illustrationUrl,
-                height: 200,
-                width: double.infinity,
-                fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) => Container(
-                  height: 200,
-                  color: Colors.grey[300],
-                  child: const Center(
-                    child: Text('🖼️', style: TextStyle(fontSize: 80)),
-                  ),
-                ),
+              child: IImage.asset(
+                       widget.story.illustrationLarge,
+                       height: 250,
+                       width: double.infinity,
+                       fit: BoxFit.cover,
+                errorBuilder: (context, error, stackTrace) => const Icon(Icons.image, size: 100),
               ),
             ),
             const SizedBox(height: 20),
@@ -114,7 +108,7 @@ class _ReadingScreenState extends State<ReadingScreen> {
                   Text(_wordsSpoken, style: const TextStyle(fontSize: 16)),
                   const SizedBox(height: 10),
                   Text(
-                    "Precizie: $accuracy%",
+                    "Precizie: ${accuracy.toStringAsFixed(0)}%",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

@@ -69,18 +69,11 @@ class _LibraryScreenState extends State<LibraryScreen> {
                       children: [
                         ClipRRect(
                           borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
-                          child: CachedNetworkImage(
-                            imageUrl: story.illustrationUrl,
+                          child: Image.asset(
+                            story.illustrationSmall,  // ← AICI: illustrationSmall
                             height: 100,
                             width: double.infinity,
                             fit: BoxFit.cover,
-                            placeholder: (context, url) => const CircularProgressIndicator(),
-                            errorWidget: (context, url, error) => Container(
-                                 color: Colors.grey[300],
-                                 child: const Center(
-                                   child: Text('🖼️', style: TextStyle(fontSize: 40)),
-                                 ),
-                            ),
                           ),
                         ),
                         Padding(
